@@ -113,7 +113,9 @@ elif [[ $db_ver == '12.2' ]];then
         ConflictCheck
 
 elif [[ $db_ver == '19' ]];then
-        . /home/oracle/scripts/shell/oraenv.sh blogprod
+        echo "Enter a database version 19: "
+        read db_19
+        . /home/oracle/scripts/shell/oraenv.sh $db_19
         ConflictCheck
 fi
 
