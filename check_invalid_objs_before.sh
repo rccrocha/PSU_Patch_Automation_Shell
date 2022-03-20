@@ -9,10 +9,10 @@ for db in $dbs
 do
         . /home/oracle/scripts/shell/oraenv.sh $db
         echo "
- __________________________________________________________
-|                                                          |
-| Check for invalid objects after patch application in $db |
-|__________________________________________________________|
+ ______________________________________________________________
+|                                                          
+| Check for invalid objects after patch application in $db 
+|______________________________________________________________
 
 "
         if [[ -e /home/oracle/scripts/shell/Patches/LOGS/${db} ]]; then
